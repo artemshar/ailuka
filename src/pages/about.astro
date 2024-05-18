@@ -9,7 +9,7 @@ import Layout from "../layouts/main.astro";
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="About Me"
-      description="Hello 👋 I'm a frontend engineer from Nanjing, China. I'm passionate about building new products and learning new technology."
+      description="Hello, I'm a Chartered Financial Analyst. I worked in Senior position role at Luxoft, X5 Retail Group, kari and other companies."
     />
 
     <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
@@ -18,9 +18,20 @@ import Layout from "../layouts/main.astro";
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      Front-end cutter 🧑🏻‍💻, back-end amateur 🤷🏻‍♂️, operations digging holes person 🤦🏻‍♂️.
+			Summarizing my breadth of professional experience, key competencies include:
     </p>
-
+		<ul
+			class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+		>
+			<li>Proficient in financial modeling, covering sales and P&L forecasting, DCF for investments, unit economics, tax modeling worldwide, and scenario planning.</li>
+			<li>Conducted regular, insightful analysis of P&L statements and key operational metrics, translating data into actionable business intelligence.</li>
+			<li>Crafted and delivered compelling presentations to key stakeholders, leveraging effective visual aids for clear and engaging communication.</li>
+			<li>Led initiatives in process optimization, streamlining workflows, and implementing automation to enhance operational efficiency.</li>
+			<li>Managed comprehensive budgeting and forecasting activities, encompassing P&L, sales, expansion plans, purchases, and inventory control.</li>
+			<li>Developed long-term strategic financial plans, converting operational strategies into measurable financial goals and projections.</li>
+			<li>Processed large-scale data sets using quantitative analysis and tools like SQL, Python, and MS Power BI, looking for valuable business insights.</li>
+			<li>and more...</li>
+		</ul>
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
@@ -31,7 +42,7 @@ import Layout from "../layouts/main.astro";
         experiences.map((experience, loop) => {
           return (
             <>
-              {loop == 0 || loop == 1 ? (
+              {loop != experiences.length - 1 ? (
                 <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
                   <AboutExperience
                     dates={experience.dates}
@@ -61,12 +72,13 @@ import Layout from "../layouts/main.astro";
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
       If you want to stay up to date with my work be sure to <a
-        href="https://twitter.com/ccikai"
+        href="https://www.linkedin.com/in/io-ignatov/"
         target="_blank"
-        class="text-indigo-600 underline">follow me on twitter</a
-      >, or you can send me an <a href="mailto:astro-aria#miantiao.me" class="text-indigo-600 underline"
-        >email</a
-      > and I'll be sure to get back to you.
+        class="text-indigo-600 underline">follow me on LinkedIn</a>
+				
+				<!-- , or you can send me an <a href="mailto:astro-aria#miantiao.me" class="text-indigo-600 underline">email</a>  -->
+				
+				and I'll be sure to get back to you.
     </p>
   </section>
 </Layout>
