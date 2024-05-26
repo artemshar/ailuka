@@ -1,4 +1,4 @@
-# Igor Ignatov blog
+# Prsonal blog website for [AILuka](https://ailuka.github.io/)
 
 
 
